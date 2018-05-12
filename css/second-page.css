@@ -169,6 +169,36 @@ div {
     font-size: .8rem;
 }
 
+/* ---  Content - Sign up --- */
+
+.signup {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border: 1px dashed #ccc;
+    margin: 20px 0;
+}
+
+.signup__icon {
+    display: inline-block;
+    flex-basis: 10%;
+    margin: 10px 30px;
+}
+
+.signup__icon-mail {
+    font-size: 4rem;
+}
+
+.signup__desc {
+    display: inline-block;
+    margin: 0 auto;
+    line-height: 1.5rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* ------------------ Policy ------------------ */
+
 .policy {
     border: 3px solid blue;
 }
