@@ -11,7 +11,7 @@ li {
 div {
     min-height: 100px;
     border: 1px solid red;
-    margin: 20px;
+    margin: 0px;
 }
 
 .main {
@@ -87,11 +87,86 @@ div {
     font-style: italic;
 }
 
-/* ------ Content ------ */
+/* -------------- Content -------------- */
 
 .content {
     border: 3px solid green;
     flex-basis: 70%;
+}
+
+/* -- Content - Carousel -- */
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+.carousel__target {
+    background: #00FF00 url(../images/week2/foodsense.jpg) no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+}
+*/
+
+.carousel__target-flag {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.flag__title {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.flag__subtitle {
+    display: inline-block;
+    align-self: flex-start;
+    color: #fff;
+    background: #000;
+    padding: 8px 20px;
+}
+
+.carousel__target-image {
+    width: 100%
+}
+
+/* .carousel__target-flag {
+    z-index: 2;
+    position: absolute;
+    top: 50px;
+} */
+
+.carousel__menu {
+    display: flex;
+    flex-direction: row;
+    color: #34ac98;
+}
+
+.carsousel__menu-item {
+    background: #eff8f7;
+}
+
+.carsousel__menu-item:hover {
+    background: #d9efec;
+}
+
+.menu-item {
+    display: block;
+    margin: 0 10px;
+}
+
+.menu-title {
+    font-size: 1.2rem;
+    margin: 20px 10px 10px;
+}
+
+.menu-desc {
+    font-size: .8rem;
 }
 
 .policy {
