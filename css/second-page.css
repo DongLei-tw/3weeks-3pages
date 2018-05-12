@@ -2,6 +2,12 @@ body {
     margin: 0;
 }
 
+ul,
+li {
+    list-style: none;
+    padding: 0;
+}
+
 div {
     min-height: 100px;
     border: 1px solid red;
@@ -18,12 +24,74 @@ div {
 
 .nav {
     border: 3px solid yellow;
-    flex-basis: 20%;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
 }
+
+.nav-logo {
+    width: 150px;
+    height: 150px;
+}
+
+.nav__iconlist {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.nav__iconlist .icon {
+    font-size: 1.5rem;
+}
+
+.nav__iconlist-item {
+    margin: 20px 10px
+}
+
+.nav__link {
+    font-size: 1.2rem;
+    font-style: italic;
+    text-decoration: none;
+    margin: 0 10px;
+    color: #33cc66;
+}
+
+/* ------- Nav News ------ */
+
+.nav__news {
+    margin: 0;
+}
+
+.nav__news-item {
+    margin: 30px 0 10px;
+}
+
+.nav__news-title {
+    border-bottom: 1px dashed #ccc;
+}
+
+.nav__news-button {
+    display: block;
+    text-align: center;
+    font-weight: 200;
+    border: 2px solid #ccc;
+    margin: 10px 20px;
+    padding: 8px 20px;
+    color: #33cc66;
+    border-radius: 5px;
+}
+
+.nav__news-text {
+    margin: 10px 0;
+    line-height: 1.5rem;
+    font-style: italic;
+}
+
+/* ------ Content ------ */
 
 .content {
     border: 3px solid green;
-    flex-basis: 80%;
+    flex-basis: 70%;
 }
 
 .policy {
@@ -47,3 +115,25 @@ div {
         border: 3px solid purple;
     }
 }
+
+/*
+
+block-name__elementname-modifier
+
+
+# BEM的命名规矩很容易记：
+block-name__element-name--modifier-name，
+模块名__元素名--修饰器名
+
+# BEM的命名中包含了模块名，长长的命名会让HTML标签会显得臃肿。
+
+- 其实每个使用BEM的开发团队多多少少会改变其命名规范，比如Instagram团队使用的驼峰式:
+.blockName-elementName--modifierName {  }
+
+- 还有单下划线：
+.block-name_element-name--modifierName { }
+
+- 还有修饰器名用单横线连接：
+.blockName__elementName-modifierName {  }
+
+*/
