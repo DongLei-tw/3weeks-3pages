@@ -8,11 +8,6 @@ li {
     padding: 0;
 }
 
-div {
-    /* border: 1px solid red; */
-    margin: 0px;
-}
-
 .main {
     display: -webkit-flex;
     display: flex;
@@ -99,14 +94,6 @@ div {
     display: flex;
     flex-direction: column;
 }
-
-/*
-.carousel__target {
-    background: #00FF00 url(../images/week2/foodsense.jpg) no-repeat;
-    background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-}
-*/
 
 .carousel__target-flag {
     display: flex;
@@ -248,11 +235,32 @@ div {
 /* ------------------ Policy ------------------ */
 
 .policy {
-    border: 3px solid blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 40px;
 }
 
-.content>div {
-    min-width: auto;
+.policy__menu-items {
+    color: #34ac98;
+}
+
+.policy__menu-item {
+    padding: 0 4px 0 0;
+    border-right: 2px solid #ccc;
+}
+
+.policy__menu-item:last-child {
+    border: 0;
+}
+
+.policy__menu_copyright {
+    color: gray;
+}
+
+.policy__menu_copyright p {
+    margin: 5px 0 0;
 }
 
 @media (max-width: 512px) {
