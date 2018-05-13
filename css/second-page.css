@@ -85,7 +85,6 @@ li {
 /* -------------- Content -------------- */
 
 .content {
-    border: 3px solid green;
     flex-basis: 68%;
 }
 
@@ -135,6 +134,7 @@ li {
 }
 
 .carsousel__menu-item {
+    flex-grow: 1;
     background: #eff8f7;
 }
 
@@ -296,6 +296,15 @@ li {
     .content {
         flex-basis: 0;
     }
+    .carousel__menu {
+        display: none;
+    }
+    .flag__title {
+        align-self: auto;
+    }
+    .flag__subtitle {
+        align-self: auto;
+    }
 }
 
 /* ---- Medium devices ----*/
@@ -329,6 +338,15 @@ li {
     }
     .content {
         flex-basis: 0;
+    }
+    .carousel__menu {
+        flex-wrap: nowrap;
+    }
+    .menu-item {
+        text-align: center;
+    }
+    .menu-decs {
+        display: none;
     }
 }
 
