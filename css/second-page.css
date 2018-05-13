@@ -305,6 +305,14 @@ li {
     .flag__subtitle {
         align-self: auto;
     }
+    .article {
+        flex-direction: column;
+        margin: 10px 0 30px;
+    }
+    .article__item {
+        flex-basis: auto;
+        margin: 20px 0 10px;
+    }
 }
 
 /* ---- Medium devices ----*/
