@@ -95,7 +95,13 @@ li {
     flex-direction: column;
 }
 
+.carousel__target {
+    position: relative;
+}
+
 .carousel__target-flag {
+    position: absolute;
+    top: 60%;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -107,6 +113,7 @@ li {
     padding: 10px 20px;
     font-size: 1rem;
     font-style: italic;
+    background-color: #fff;
 }
 
 .flag__subtitle {
@@ -120,12 +127,6 @@ li {
 .carousel__target-image {
     width: 100%
 }
-
-/* .carousel__target-flag {
-    z-index: 2;
-    position: absolute;
-    top: 50px;
-} */
 
 .carousel__menu {
     display: flex;
@@ -311,6 +312,12 @@ li {
     }
     .carousel__menu {
         display: none;
+    }
+    .carousel__target {
+        position: static;
+    }
+    .carousel__target-flag {
+        position: static;
     }
     .flag__title {
         align-self: auto;
