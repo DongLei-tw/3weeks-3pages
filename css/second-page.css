@@ -135,11 +135,17 @@ li {
 
 .carsousel__menu-item {
     flex-grow: 1;
-    background: #eff8f7;
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-image: linear-gradient(to bottom, #eff8f7 50%, #d9efec 50%);
 }
 
 .carsousel__menu-item:hover {
-    background: #d9efec;
+    -webkit-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+    background-position: bottom;
 }
 
 .menu-item {
@@ -290,6 +296,9 @@ li {
         flex-direction: row;
         border-bottom: 2px solid #ccc;
     }
+    .nav__iconlist-item:hover {
+        transform: scale(1.2);
+    }
     .nav-logo {
         order: 1;
         margin: 20px auto;
@@ -367,7 +376,19 @@ li {
 
 /* ---- Large devices ----*/
 
-@media (max-width: 1199.98px) {}
+@media (min-width: 992px) {
+    .article__item-image:hover {
+        transform: scale(1.5);
+    }
+    .nav__iconlist-item:hover {
+        transform: scale(1.2);
+    }
+    .nav__news-button:hover {
+        color: #fff;
+        background-color: #33cc66;
+        cursor: pointer;
+    }
+}
 
 /* @media (max-width: 512px) {
     .main {
