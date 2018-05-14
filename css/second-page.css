@@ -266,7 +266,11 @@ li {
 
 /* ----Extra  Small devices ----*/
 
-/* @media (max-width: 575.98px) {} */
+@media (max-width: 575.98px) {
+    .nav__iconlist {
+        display: none;
+    }
+}
 
 /* ---- Small devices ----*/
 
@@ -304,6 +308,9 @@ li {
     }
     .flag__subtitle {
         align-self: auto;
+    }
+    .signup__icon-mail {
+        font-size: 3rem;
     }
     .article {
         flex-direction: column;
