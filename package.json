@@ -11,6 +11,6 @@
     "week3": "parcel week3.html -p 8003 --open"
   },
   "dependencies": {
-    "parcel-bundler": "^1.7.1"
+    "parcel-bundler": "^1.11.0"
   }
 }
